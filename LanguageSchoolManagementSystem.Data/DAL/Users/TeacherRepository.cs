@@ -25,7 +25,8 @@ namespace LanguageSchoolManagementSystem.Data.DAL.Users
 
         public void Delete(Teacher entity)
         {
-            SchoolContext.Teachers.Remove(entity);
+            SchoolContext.Teachers
+                .Remove(entity);
         }
 
         public void Edit(Teacher entity)

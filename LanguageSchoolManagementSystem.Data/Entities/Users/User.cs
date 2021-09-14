@@ -2,7 +2,7 @@
 
 namespace LanguageSchoolManagementSystem.Data.Entities.Users
 {
-    public class User
+    public abstract class User
     {
         public Guid UserID { get; set; }
         public string Name { get; set; }
@@ -20,6 +20,14 @@ namespace LanguageSchoolManagementSystem.Data.Entities.Users
         {
             Name = name;
             Surname = surname;
+            AccessLevel = accessLevel;
+        }
+
+        public User(string name, string surname, int age, AccessLevel accessLevel)
+        {
+            Name = name;
+            Surname = surname;
+            Age = age;
             AccessLevel = accessLevel;
         }
     }

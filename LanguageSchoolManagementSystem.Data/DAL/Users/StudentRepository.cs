@@ -23,7 +23,8 @@ namespace LanguageSchoolManagementSystem.Data.DAL.Users
 
         public void Delete(Student entity)
         {
-            _schoolContext.Students.Remove(entity);
+            _schoolContext.Students
+                .Remove(entity);
         }
 
         public void Edit(Student entity)

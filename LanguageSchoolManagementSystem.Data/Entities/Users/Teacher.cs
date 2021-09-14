@@ -6,8 +6,6 @@ namespace LanguageSchoolManagementSystem.Data.Entities.Users
     {
         public ICollection<Class> ClassesAssigned { get; set; }
 
-
-
         public Teacher()
         {
             ClassesAssigned = new List<Class>();
